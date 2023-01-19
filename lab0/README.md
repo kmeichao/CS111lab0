@@ -21,10 +21,18 @@ To remove the kernel and clean up the code run the following command:
 > make clean
 
 "sudo rmmod" will print nothing if it succeeds.
+If you run with python testing, run the command "rm -r __pycache__" to remove what was added by the test suite.
 
 ## Testing
 
-Report which kernel release version you tested your module on
-(hint: use `uname`, check for options with `man uname`).
-It should match release numbers as seen on https://www.kernel.org/.
+To run the provided python test cases run the command:
+> python -m unittest
+
+A '.' will appear for each passed test case. A 'F' will appear for each failed test case. "OK" will show at the bottom if all test cases succeeded.
+
+To find the kernel release version run the command:
+> uname -a
+
+kernel release version: Linux 5.14.8-arch1-1
+
 
