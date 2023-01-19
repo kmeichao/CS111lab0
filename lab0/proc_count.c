@@ -33,6 +33,6 @@ static void __exit proc_count_exit(void)
 module_init(proc_count_init);
 module_exit(proc_count_exit);
 
-MODULE_AUTHOR("Your name");
-MODULE_DESCRIPTION("One sentence description");
+MODULE_AUTHOR("Kaylee Mei Chao");
+MODULE_DESCRIPTION("A kernel module that shows the current number of processes running.");
 MODULE_LICENSE("GPL");
